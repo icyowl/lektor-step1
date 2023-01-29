@@ -2,7 +2,7 @@
   --font-body: -apple-system, "Helvetica Neue", "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic Medium", "YU Gothic", "Meiryo", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
   --font-verdana: Verdana, sans-serif;
   --font-code: Inconsolata, Monaco, Consolas, "Courier New", Courier, system-ui, monospace;
-  --gray: var(--gray-3);
+  --gray: #bcc2bf; /* --gray-3 */
 
   --fontsize-root: 16px;
 
@@ -27,7 +27,8 @@ html {
 
 body {
   margin: 0;
-  font-family: var(--font-body);
+  padding: 0;
+  background: #fff;
 }
 
 h1 {font-size: var(--fontsize-1);}
@@ -39,28 +40,12 @@ h6 {font-size: var(--fontsize-6);}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
-  font-weight: bold;
+  font-weight: 500;
   margin: 1rem 0;
 }
 
 h3, h4, h5, h6 {
   margin-top: 1.5rem;
-}
-
-/* override fonts */
-header h1 {
-  line-height: 1.5;
-  font-weight: bold;
-  font-size: var(--fontsize-1);
-}
-
-header nav ul {
-  font-family: var(--font-verdana);
-}
-
-/* layout adjustment */
-.meta {
-  line-height: 1;
 }
 
 /* html elements */
@@ -75,9 +60,14 @@ hr {
   border: 0;
 }
 
+
 ul, ol {
   padding: 0 0 0 2rem;
-  margin: .5rem 0;
+  margin: 0;
+}
+
+li {
+  line-height: 1.75;
 }
 
 ul {
@@ -113,7 +103,7 @@ p code {
 }
 
 pre {
-  line-height: 1.25;
+  line-height: 1.5;
   border: solid 1px var(--gray);
   border-radius: 4px;
   margin: 1rem 0;
@@ -138,20 +128,3 @@ td {
   padding: 0 .5rem;
 }
 
-/* responsive */
-header, footer, div.page {
-  width: initial;
-  max-width: 760px;
-}
-
-@media screen and (max-width: 576px) {
-  html {
-    line-height: 1.5;
-  }
-  body {
-    margin: 2px;
-  }
-  header, footer, div.page {
-    padding: 1rem;
-  }
-}
