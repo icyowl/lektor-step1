@@ -1,0 +1,5 @@
+[project]
+name = 日本語のTitle
+
+[packages]
+lektor-markdown-excerpt = 0.1
