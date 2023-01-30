@@ -34,22 +34,23 @@
 
 }
 
+/* add colors */
 h2 a, h3 a, h4 a, h5 a, h6 a {
-text-decoration: none;
-color: var(--gray-8);
+  text-decoration: none;
+  color: var(--gray-8);
 }
 
 h2 a:hover, h3:hover a:hover, h4 a:hover, h5 a:hover, h6 a:hover{
-text-decoration: none;
-color: var(--gray-6);
+  text-decoration: none;
+  color: var(--gray-6);
 }
 
 header .active a {
-color: var(--nenu-active-color);
+  color: var(--nenu-active-color);
 }
 
 .disabled {
-color: var(--gray-3);
+  color: var(--gray-3);
 }
 
 /* override colors */

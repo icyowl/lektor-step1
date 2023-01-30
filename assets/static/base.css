@@ -1,4 +1,6 @@
 :root {
+
+  --font-heading: system-ui, sans-serlf;
   --font-body: -apple-system, "Helvetica Neue", "Segoe UI", Roboto, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "Yu Gothic Medium", "YU Gothic", "Meiryo", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
   --font-verdana: Verdana, sans-serif;
   --font-code: Inconsolata, Monaco, Consolas, "Courier New", Courier, system-ui, monospace;
@@ -40,11 +42,12 @@ h6 {font-size: var(--fontsize-6);}
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1;
+  font-family: var(--font-heading);
   font-weight: 500;
   margin: 1rem 0;
 }
 
-h3, h4, h5, h6 {
+h3 {
   margin-top: 1.5rem;
 }
 
@@ -128,3 +131,8 @@ td {
   padding: 0 .5rem;
 }
 
+img {
+  border: none;
+  margin: 0 auto;
+  max-width: 100%;
+}
