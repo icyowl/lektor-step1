@@ -98,7 +98,7 @@ code {
   font-size: 0.875rem;
 }
 
-p code {
+p code, li code {
   border: solid 1px var(--gray);
   border-radius: 2px;
   padding: 1px 4px;
